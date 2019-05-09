@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Mini App</title>
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/F34387D3-80D3-3448-9997-E6597887B3E5/main.js" charset="UTF-8"></script><style>
+      
+      div.user-photo {
+        margin: 1em auto;
+      }
+     body{background:#ffffff}
+      div.select{margin-bottom:2.5em}
+           }
+      div.details{color:#ffffff; 
+      background:#6200ee; font-size:1.3em; 
+        margin-top:4em; 
+        padding:0.5em 1em 0.5em 1em; 
+        border-radius:10px;}
+      .details p{margin:0.3em}
+      div#outcome{position:absolute; 
+        right:2.2em; 
+        bottom:6.5em; 
+        width:100px;
+        text-align:center}
+      #outcome h5{padding:1em; 
+        background:#ffffff; 
+        border-radius:10%; 
+        margin:0 }
+      #outcome p{height:40px; 
+        color:#ffffff;
+        border-bottom:5px solid #ffffff; 
+        font-size:2em; 
+        margin:0; 
+        padding:0.5em 0 0.5em 0;}
+       #oracle{margin-top:2.5em; 
+        border: 1px solid; 
+        width:100%}
+    </style>
+  </head>
+  <body >      
+    <script>
+      const fetchAndDisplayUsers = () => {
+        users.push({
+          age: 40,
+          weight: 75,
+          height: 6,
+          country: 'Nigeria',
+          name: 'Charles Odili',
+          id: 'dfhb454768DghtF'
+        });
+
+        displayUsers(users);
+      };
+      
+      const startApp = () => {
+        
+      };
+
+      startApp();
+    </script>
+     <button id="filter-query" class="mdc-icon-button material-icons">filter_list</button>
+    <div class="select">
+      <select class="select-text"><option disabled selected>Select User</option> 
+      </select>
+       <div class="user-photo">
+    <img src="https://via.placeholder.com/150"  alt="user photo"/>
+    </div>
+    <div class="details mdc-elevation--z3">
+      <p><span class="prop" data-age="">Age :</span><span class="value" data-age-value>35</span></p>
+      <p><span class="prop" data-height="">Height :</span><span class="value" data-height-value>1.6m</span></p>
+      <p><span class="prop" data-weight="">Weight :</span><span class="value" data-weight-value>75kg</span></p>
+      <p><span class="prop" data-gender="">Gender :</span><span class="value" data-gender-value>Male</span></p>
+      <p><span class="prop" data-country="">Country :</span><span class="value" data-country-value>Nigeria</span></p>
+      </div>
+    
+      <button id="oracle" class="mdc-button">Calculate BMI</button>
+      <div id="outcome"><h5 class="mdc-typography--headline5" >BMI</h5><p></p>
+    </div>
+  </body>
+</html>
